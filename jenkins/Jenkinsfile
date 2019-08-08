@@ -23,7 +23,20 @@ pipeline {
                 }
             }
         }
-        stage('Deliver') {
+
+stage('Sonarqube Analysis') {
+            steps {
+                echo 'Code quality analysis'
+            }
+        }
+
+   stage('Archive') {
+            steps {
+                echo 'Archiving...'
+            }
+        }   
+
+  stage('Deeploy') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
             }
