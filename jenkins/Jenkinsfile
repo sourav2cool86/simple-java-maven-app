@@ -26,7 +26,7 @@ pipeline {
 
 stage('Sonarqube Analysis') {
             steps {
-                sh 'echo "CODE ANALYSIS"'
+                sh 'ls asdgh'
             }
         }
 
