@@ -35,14 +35,14 @@ stage('Sonarqube Analysis') {
    stage('Archive') {
             steps {
                 echo 'Archiving...'
-               sh 'ls /tmp/gjgjg'
+               sh 'ls /tmp/'
             }
         }   
 
   stage('Deeploy') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
-               sh 'ls /tmp/'
+               sh 'ls /tmp/JLKJHLKJ'
             }
         }
     }
