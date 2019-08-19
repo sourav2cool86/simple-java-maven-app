@@ -39,7 +39,7 @@ stage('Sonarqube Analysis') {
             }
         }   
 
-  stage('Deeploy') {
+  stage('Deploy') {
             steps {
                 sh './jenkins/scripts/deliver.sh'
                sh 'ls /tmp/JLKJHLKJ'
