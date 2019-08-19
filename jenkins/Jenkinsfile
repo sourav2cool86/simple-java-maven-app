@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -DskipTests=true package'
-               sh 'ls /tmp/'
+               sh 'ls /tmp/dss'
             }
         }
         stage('Test') {
