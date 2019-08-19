@@ -11,7 +11,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -DskipTests=true package'
-               sh 'ls /tmp/dss'
+               sh 'ls /tmp'
             }
         }
         stage('Test') {
@@ -35,7 +35,7 @@ stage('Sonarqube Analysis') {
    stage('Archive') {
             steps {
                 echo 'Archiving...'
-               sh 'ls /tmp/KJHSKJFDHA'
+               sh 'ls /tmp/'
             }
         }   
 
